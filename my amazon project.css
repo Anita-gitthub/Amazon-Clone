@@ -1,0 +1,237 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    border:border-box;
+    padding:0px;
+    margin:0px;
+}
+.navbar{
+    height:80px;
+    background-color:#0f1111;
+    color:white;
+    /* By writing the line blow I Can place muliple divs in a single navbar (one line)
+    example for amazon,location,search ,in a single navbar,making them appear on one line */
+    display:flex;
+    justify-content:space-evenly;
+}
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+.logo{
+    /* background-image: url(' class="fa-brands fa-amazon"');  */
+    background-size: cover;
+    height: 1oopx;
+    width: 100%;
+    margin: 25px;
+}
+.border{
+    border:1.5px solid transparent;
+}
+
+.border:hover {
+    border:1.5px solid white;
+}
+
+/* FOR BOX2 */
+.add-first{
+    color: rgb(182, 180, 180);
+    /* set font size in rem units instead of px so that the font size automatically adjust with the website's size (on phone,pc,tablets etc)
+    Apply this consistently throughout the entire codebase */
+    font-size : 0.8rem;
+    margin: 6px;
+}
+.add-second{
+    color: rgb(250, 248, 248);
+    font-size: 1rem; 
+    margin:2px ;
+}
+/*The loction icon link and the word india can be placed on a sinle line by makin add-icon a flex container
+ (this is applicable only when both elements are present within one <div> in the HTML) */
+.add-icon{
+    /* Using display flex center items horizontally */
+display:flex;
+ /* Using align-items: centre ,left right aligns items vetically  */
+align-items: centre;
+}
+
+/* BOX 3 */
+.nav-search{
+    display:flex; 
+    /* Write the line below so that 'All','search',and magnifying glass icon are equally spaced
+     (further spacing can be adjusted as needed by adding more code give) */
+    justify-content:space-evenly;
+    margin:10px;
+    background-color:orange;
+    height: 35px;
+    width:600px;
+    border-radius:4px;
+}
+.search-select{
+background-color:#c2c5c5;
+text-align:centre;
+/*  Add the line below to create a curved border */
+border-top-left-radius:4px;
+border-bottom-left-radius:4px;
+width: 50px;
+/* This makes the border line disappear  */
+border:none;
+}
+.search-input{
+    /* I'm setting the width to 500px so that the search bar occupies only that specific area.If were to set width: 100% 
+    the search bar would take up the entire remaining space after 'All' and the magnifying glass*/
+    width:100%;
+    border:none;
+    font-size: 1ren;
+}
+.search-icon{
+    width:50px;
+    color:#454545;
+    font-size: 1.3rem;
+}
+/* When I hover over the search bar it will display an orange border*/
+.nav-search:hover {
+    border:3px solid orange;
+}
+
+/* BOX 4 */
+.nav-flag{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:18px;
+}
+.language{
+    margin-left:5px;
+}
+/* BOX 5 */
+span{
+  font-size:1rem; 
+} 
+.sign-list{
+    font-size:1rem; 
+    /* Using font weight to text bold */
+    font-weight:700;
+    margin:8px;
+}
+/* BOX 6 */
+.nav-cart{
+    margin:20px;
+}
+
+/* PANEL */
+.panel{
+    background-color:rgb(90, 90, 90);
+    height:40px;
+    color:white;
+    display:flex; 
+}
+.panel-All{
+    display:flex;
+    margin-top:15px;
+    margin-left:3px;
+}
+.panel-option{
+    Display:flex;
+    justify-content:space-evenly; 
+    width:100%
+}
+
+/* hero-section */
+.hero-section{
+    background-size: cover;
+    height: 300px ;
+}
+.shop-section{
+    display:flex;
+    /* By using flex wrap:wrap ,the boxes will be equally spaced"for example ,if I create 8 boxes,4 will appear on each line */
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    /* This background color applies to the area behind the boxes specifically the spaces displayed betweeen them
+    (means the area show between two box) */
+    background-color:rgb(201, 225, 214);
+}
+.box{
+    /* border:1.5px solid black ; */
+    height:300px;
+    width:470px;
+    background-color:white;
+    /* By using padding,spaces will be created between the box and the image */
+    padding:20px 0px 15px;
+    margin-top:10px;
+
+}
+.box-img{
+    height:230px;
+    background-size:cover;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+.box-content{
+    margin-left:10px;
+    margin-right:10px;
+}
+/* color for see more etc write inside box */
+.box-content P{
+    color:rgb(101, 160, 208);
+}
+
+/* FOOTER */
+footer{
+    margin-top:8px; 
+    width:100%;
+}
+.foot-section1{
+    background-color:#37475a;
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.foot-section2{
+    background-color:#222f3d;
+    color:white;
+    height:370px;
+    display:flex;
+    justify-content:space-evenly;
+}
+ul{
+    margin-top:15px;
+}
+
+/* footer  unordered list anchor tag display a block so 
+/* every thing come in single column */
+ul a{
+    display:block;  
+    font-size:0.90rem;
+    margin-top:10px;
+    color:#dddddd;
+}
+
+.foot-section3{
+    background-color:#222f3d;
+    height:80px;
+    /* Below style make a line  */
+    border-top:0.8px solid gray;
+    display:flex; 
+    justify-content:space-evenly; 
+    align-items:center;
+}
+.logo{
+    background-size:cover;
+    height:50px;
+    /* If i  give width 100% so logo  will not come in center */
+    width:100px;
+}
+.foot-section4{
+    background-color:#0f1111;
+    color:white;
+    text-align:center;
+    height:100px;
+    font-size:0.85rem;
+}
+.policy{
+    padding-top:25px;
+}
+.copyright{
+    padding-top:7px;
+}
